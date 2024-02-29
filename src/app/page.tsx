@@ -1,113 +1,169 @@
+import Nav from "@/components/Nav";
+import { Button } from "@/components/ui/button";
+import {
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillGithub,
+} from "react-icons/ai";
+import { DiReact, DiJsBadge, DiHtml5, DiCss3, DiPython } from "react-icons/di";
+import { TbBrandPython } from "react-icons/tb";
+import {Snippet} from "@nextui-org/react";
+
+
 import Image from "next/image";
+import profile from "../../public/profile.jpeg";
+import produni from "../../public/Produni.png";
+import mentis from "../../public/Mentis.png";
+import multitool from "../../public/dmx_multitool.png"
+import skipp5 from "../../public/skipp-5.png"
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge";
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="pb-24">
+      <Nav />
+      <section className="py-12 px-12 flex flex-col text-center gap-8 dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
+        <div className="text-left pt-10 flex justify-between">
+          <div>
+            <h2 className="text-5xl py-2 text-primary font-medium md:text-6xl">
+              Eetu Petänen
+            </h2>
+            <h3 className="text-2xl pt-2 md:text-3xl text-secondary-foreground">
+              Developer and student.
+            </h3>
+            <div className="text-5xl flex justify-start py-4 gap-6 text-secondary-foreground">
+              <a href="https://twitter.com/epetanen">
+                <AiFillTwitterCircle />
+              </a>
+              <a href="https://www.linkedin.com/in/eetu-petanen/">
+                <AiFillLinkedin />
+              </a>
+              <a href="https://www.github.com/EetuPe/">
+                <AiFillGithub />
+              </a>
+            </div>
+          </div>
+          <div className="relative rounded-lg md:rounded-full w-40 h-40 overflow-hidden md:h-80 md:w-80">
+            <Image src={profile} layout="fill" objectFit="cover" alt={"Profile picture"} />
+          </div>
         </div>
+      </section>
+      <div className="pt-12 flex gap-6 items-center justify-center">
+        <h1 className="text-2xl md:text-4xl text-semibold text-secondary-foreground">Projects I've Worked on</h1>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section className="py-12 px-12 flex flex-col text-center gap-8">
+        <Card>
+          <CardHeader>
+            <CardTitle>ProdUni</CardTitle>
+            <CardDescription>A place for students to keep track of their schedules</CardDescription>
+          </CardHeader>
+          <CardContent className="flex justify-center items-center">
+            <Image className="rounded w-1/2 h-auto shadow-md" src={produni} alt={"Produni"} />
+          </CardContent>
+          <CardFooter className="flex-col justify-center items-center gap-6">
+            <div className="flex gap-2 items-center justify-center">
+            <a
+                  href="https://github.com/EetuPe/produni1.1"
+            >
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-secondary-foreground text-primary font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2">{`</>`}</Badge>
+            </a>
+            <a
+                  href="https://produni.petanen.com"
+            >
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-primary text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2">Live View</Badge>
+            </a>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-2 items-center justify-center">
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiReact className="mr-1"/>React</Badge>
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiJsBadge className="mr-1"/>Javascript</Badge>
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiHtml5 className="mr-1"/>Html</Badge>
+            </div>
+            <Snippet variant="shadow" color="secondary" className="md:text-lg sm:text-sm">gh repo clone EetuPe/produni1.1</Snippet>
+          </CardFooter>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle>Mentis</CardTitle>
+            <CardDescription>A mastermind game where the player guesses a 4 color code. Each color is assigned a numerical value.</CardDescription>
+          </CardHeader>
+          <CardContent className="flex justify-center items-center">
+            <Image className="rounded w-1/2 h-auto shadow-md" src={mentis} alt={"Mentis"} />
+          </CardContent>
+          <CardFooter className="flex-col justify-center items-center gap-6">
+            <div className="flex gap-2 items-center justify-center">
+            <a
+                  href="https://github.com/EetuPe/mentis"
+            >
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-secondary-foreground text-primary font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2">{`</>`}</Badge>
+            </a>
+            <a
+                  href="https://mentis.petanen.com"
+            >
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-primary text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2">Live View</Badge>
+            </a>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-2 items-center justify-center">
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiReact className="mr-1"/>React</Badge>
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiJsBadge className="mr-1"/>Javascript</Badge>
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiHtml5 className="mr-1"/>Html</Badge>
+            </div>
+            <Snippet variant="shadow" color="secondary" className="md:text-lg sm:text-sm">gh repo clone EetuPe/mentis</Snippet>
+          </CardFooter>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle>DMX Multitool</CardTitle>
+            <CardDescription>A tool for lighting technicians to calculate DMX channel values for all kinds of fixtures. Works with multiple universes.</CardDescription>
+          </CardHeader>
+          <CardContent className="flex justify-center items-center">
+            <Image className="rounded w-1/2 h-auto shadow-md" src={multitool} alt={"Multitool"} />
+          </CardContent>
+          <CardFooter className="flex-col justify-center items-center gap-6">
+            <div className="flex gap-2 items-center justify-center">
+            <a
+                  href="https://dmxtool.com"
+            >
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-primary text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2">Live View</Badge>
+            </a>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-2 items-center justify-center">
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiReact className="mr-1"/>React</Badge>
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiJsBadge className="mr-1"/>Javascript</Badge>
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiHtml5 className="mr-1"/>Html</Badge>
+            </div>
+          </CardFooter>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle>Skipp-5</CardTitle>
+            <CardDescription>A simple and fun number game played on a 5x5 board. The goal of the game is to fill the board with numbers 1-25.</CardDescription>
+          </CardHeader>
+          <CardContent className="flex justify-center items-center">
+            <Image className="rounded w-1/2 h-auto shadow-md" src={skipp5} alt={"Skipp-5"} />
+          </CardContent>
+          <CardFooter className="flex-col justify-center items-center gap-6">
+            <div className="flex gap-2 items-center justify-center">
+            <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-secondary-foreground text-primary font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2">{`</>`}</Badge>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-2 items-center justify-center">
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiPython className="mr-1"/>Python</Badge>
+              <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><TbBrandPython className="mr-1"/>Tkinter</Badge>
+            </div>
+            <Snippet variant="shadow" color="secondary" className="md:text-lg sm:text-sm">gh repo clone EetuPe/skipp-5</Snippet>
+          </CardFooter>
+        </Card>
+        
+      </section>
     </main>
   );
 }
