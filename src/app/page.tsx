@@ -88,7 +88,7 @@ export default function Home() {
               <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiJsBadge className="mr-1"/>Javascript</Badge>
               <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiHtml5 className="mr-1"/>Html</Badge>
             </div>
-            <Snippet variant="shadow" color="secondary" className="md:text-lg sm:text-sm">gh repo clone EetuPe/produni1.1</Snippet>
+            <Snippet variant="shadow" color="secondary" className="md:text-lg sm:text-sm w-fit px-1 rounded">gh repo clone EetuPe/produni1.1</Snippet>
           </CardFooter>
         </Card>
         <Card>
@@ -117,7 +117,7 @@ export default function Home() {
               <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiJsBadge className="mr-1"/>Javascript</Badge>
               <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiHtml5 className="mr-1"/>Html</Badge>
             </div>
-            <Snippet variant="shadow" color="secondary" className="md:text-lg sm:text-sm">gh repo clone EetuPe/mentis</Snippet>
+            <Snippet variant="shadow" color="secondary" className="md:text-lg sm:text-sm w-fit px-1 rounded">gh repo clone EetuPe/mentis</Snippet>
           </CardFooter>
         </Card>
         <Card>
@@ -159,7 +159,7 @@ export default function Home() {
               <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiPython className="mr-1"/>Python</Badge>
               <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><TbBrandPython className="mr-1"/>Tkinter</Badge>
             </div>
-            <Snippet variant="shadow" color="secondary" className="md:text-lg sm:text-sm">gh repo clone EetuPe/skipp-5</Snippet>
+            <Snippet variant="shadow" color="secondary" className="md:text-lg sm:text-sm w-fit px-1 rounded">gh repo clone EetuPe/skipp-5</Snippet>
           </CardFooter>
         </Card>
         
