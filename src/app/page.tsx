@@ -68,7 +68,7 @@ export default function Home() {
             <CardDescription>A place for students to keep track of their schedules</CardDescription>
           </CardHeader>
           <CardContent className="flex justify-center items-center">
-            <Image className="rounded w-1/2 h-auto shadow-md" src={produni} alt={"Produni"} />
+            <Image className="rounded w-4/5 h-auto shadow-md" src={produni} alt={"Produni"} />
           </CardContent>
           <CardFooter className="flex-col justify-center items-center gap-6">
             <div className="flex gap-2 items-center justify-center">
@@ -97,7 +97,7 @@ export default function Home() {
             <CardDescription>A mastermind game where the player guesses a 4 color code. Each color is assigned a numerical value.</CardDescription>
           </CardHeader>
           <CardContent className="flex justify-center items-center">
-            <Image className="rounded w-1/2 h-auto shadow-md" src={mentis} alt={"Mentis"} />
+            <Image className="rounded w-4/5 h-auto shadow-md" src={mentis} alt={"Mentis"} />
           </CardContent>
           <CardFooter className="flex-col justify-center items-center gap-6">
             <div className="flex gap-2 items-center justify-center">
@@ -126,7 +126,7 @@ export default function Home() {
             <CardDescription>A tool for lighting technicians to calculate DMX channel values for all kinds of fixtures. Works with multiple universes.</CardDescription>
           </CardHeader>
           <CardContent className="flex justify-center items-center">
-            <Image className="rounded w-1/2 h-auto shadow-md" src={multitool} alt={"Multitool"} />
+            <Image className="rounded w-4/5 h-auto shadow-md" src={multitool} alt={"Multitool"} />
           </CardContent>
           <CardFooter className="flex-col justify-center items-center gap-6">
             <div className="flex gap-2 items-center justify-center">
@@ -149,7 +149,7 @@ export default function Home() {
             <CardDescription>A simple and fun number game played on a 5x5 board. The goal of the game is to fill the board with numbers 1-25.</CardDescription>
           </CardHeader>
           <CardContent className="flex justify-center items-center">
-            <Image className="rounded w-1/2 h-auto shadow-md" src={skipp5} alt={"Skipp-5"} />
+            <Image className="rounded w-4/5 h-auto shadow-md" src={skipp5} alt={"Skipp-5"} />
           </CardContent>
           <CardFooter className="flex-col justify-center items-center gap-6">
             <div className="flex gap-2 items-center justify-center">
