@@ -59,7 +59,7 @@ export default function Home() {
         </div>
       </section>
       <div className="pt-12 flex gap-6 items-center justify-center">
-        <h1 className="text-2xl md:text-4xl text-semibold text-secondary-foreground">Projects I've Worked on</h1>
+        <h1 className="text-2xl md:text-4xl text-semibold text-secondary-foreground">Projects I&apos;ve Worked on</h1>
       </div>
       <section className="py-12 px-12 flex flex-col text-center gap-8">
         <Card>
