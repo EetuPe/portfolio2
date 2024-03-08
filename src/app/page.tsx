@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <main className="pb-24">
       <Nav />
-      <section className="py-12 px-12 flex flex-col text-center gap-8 dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
+      <section className="py-12 px-12 flex flex-col text-center gap-8">
         <div className="text-left pt-10 flex justify-between">
           <div>
             <h2 className="text-5xl py-2 text-primary font-medium md:text-6xl">
@@ -153,16 +153,19 @@ export default function Home() {
           </CardContent>
           <CardFooter className="flex-col justify-center items-center gap-6">
             <div className="flex gap-2 items-center justify-center">
+            <a
+                  href="https://github.com/EetuPe/Skipp-5"
+            >
             <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-secondary-foreground text-primary font-sans font-semibold text-sm border-blue btn-primary hover:text-white hover:bg-blue-light focus:outline-none active:shadow-none mr-2">{`</>`}</Badge>
+            </a>
             </div>
             <div className="flex flex-col sm:flex-row gap-2 items-center justify-center">
               <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><DiPython className="mr-1"/>Python</Badge>
               <Badge className="py-2 px-4 shadow-md no-underline rounded-full bg-slate-800 text-white font-sans font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-orange-light focus:outline-none active:shadow-none mr-2"><TbBrandPython className="mr-1"/>Tkinter</Badge>
             </div>
-            <Snippet variant="shadow" color="secondary" className="md:text-lg sm:text-sm w-fit px-1 rounded">gh repo clone EetuPe/skipp-5</Snippet>
+            <Snippet variant="shadow" color="secondary" className="md:text-lg sm:text-sm w-fit px-1 rounded">gh repo clone EetuPe/Skipp-5</Snippet>
           </CardFooter>
         </Card>
-        
       </section>
     </main>
   );
