@@ -74,7 +74,7 @@ export default function Home() {
         
         <div className="grid md:grid-cols-2 gap-8">
           {/* ProdUni Card */}
-          <Card className="hover:shadow-lg transition-shadow">
+          <Card className="hover:shadow-lg transition-transform hover:scale-105 duration-300">
             <CardHeader>
               <CardTitle>ProdUni</CardTitle>
               <CardDescription>A place for students to keep track of their schedules</CardDescription>
@@ -109,7 +109,7 @@ export default function Home() {
           </Card>
 
           {/* Mentis Card */}
-          <Card className="hover:shadow-lg transition-shadow">
+          <Card className="hover:shadow-lg transition-transform hover:scale-105 duration-300">
             <CardHeader>
               <CardTitle>Mentis</CardTitle>
               <CardDescription>A mastermind game where the player guesses a 4 color code</CardDescription>
@@ -144,7 +144,7 @@ export default function Home() {
           </Card>
 
           {/* DMX Multitool Card */}
-          <Card className="hover:shadow-lg transition-shadow">
+          <Card className="hover:shadow-lg transition-transform hover:scale-105 duration-300">
             <CardHeader>
               <CardTitle>DMX Multitool</CardTitle>
               <CardDescription>A tool for lighting technicians to calculate DMX channel values</CardDescription>
@@ -173,7 +173,7 @@ export default function Home() {
           </Card>
 
           {/* Skipp-5 Card */}
-          <Card className="hover:shadow-lg transition-shadow">
+          <Card className="hover:shadow-lg transition-transform hover:scale-105 duration-300">
             <CardHeader>
               <CardTitle>Skipp-5</CardTitle>
               <CardDescription>A simple and fun number game played on a 5x5 board</CardDescription>
