@@ -5,6 +5,7 @@ import {
   AiFillLinkedin,
   AiFillGithub,
 } from "react-icons/ai";
+import { FaBluesky } from "react-icons/fa6";
 import { DiReact, DiJsBadge, DiHtml5, DiCss3, DiPython } from "react-icons/di";
 import { TbBrandPython } from "react-icons/tb";
 import {Snippet} from "@nextui-org/react";
@@ -48,8 +49,8 @@ export default function Home() {
               <a href="https://www.github.com/EetuPe/" className="hover:text-primary transition-colors">
                 <AiFillGithub />
               </a>
-              <a href="https://twitter.com/epetanen" className="hover:text-primary transition-colors">
-                <AiFillTwitterCircle />
+              <a href="https://bsky.app/profile/petanen.com" className="hover:text-primary transition-colors">
+                <FaBluesky />
               </a>
             </div>
           </div>
