@@ -42,14 +42,14 @@ export default function Home() {
               Developer and student.
             </h2>
             <div className="flex gap-6 text-4xl text-secondary-foreground">
-              <a href="https://twitter.com/epetanen" className="hover:text-primary transition-colors">
-                <AiFillTwitterCircle />
-              </a>
               <a href="https://www.linkedin.com/in/eetu-petanen/" className="hover:text-primary transition-colors">
                 <AiFillLinkedin />
               </a>
               <a href="https://www.github.com/EetuPe/" className="hover:text-primary transition-colors">
                 <AiFillGithub />
+              </a>
+              <a href="https://twitter.com/epetanen" className="hover:text-primary transition-colors">
+                <AiFillTwitterCircle />
               </a>
             </div>
           </div>
