@@ -13,7 +13,6 @@ export default function Nav() {
                     <li>
                         <div className="flex gap-6 items-center justify-center">
                             <ModeToggle />
-                            <Button>Resume</Button>
                         </div>
                     </li>
                 </ul>
