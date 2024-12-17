@@ -56,10 +56,10 @@ export default function Home() {
           <div className="relative w-48 h-48 md:w-96 md:h-96 rounded-full overflow-hidden shadow-xl">
             <Image 
               src={profile} 
-              layout="fill" 
-              objectFit="cover" 
+              fill
+              sizes="(max-width: 768px) 192px, 384px"
               alt="Profile picture"
-              className="hover:scale-105 transition-transform duration-300" 
+              className="hover:scale-105 transition-transform duration-300 object-cover" 
             />
           </div>
         </div>
@@ -83,9 +83,9 @@ export default function Home() {
                 <Image 
                   src={produni} 
                   alt="Produni" 
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="rounded-lg object-cover"
                 />
               </div>
             </CardContent>
@@ -118,9 +118,9 @@ export default function Home() {
                 <Image 
                   src={mentis} 
                   alt="Mentis" 
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="rounded-lg object-cover"
                 />
               </div>
             </CardContent>
@@ -153,9 +153,9 @@ export default function Home() {
                 <Image 
                   src={multitool} 
                   alt="DMX Multitool" 
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="rounded-lg object-cover"
                 />
               </div>
             </CardContent>
@@ -182,9 +182,9 @@ export default function Home() {
                 <Image 
                   src={skipp5} 
                   alt="Skipp-5" 
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="rounded-lg object-cover"
                 />
               </div>
             </CardContent>
