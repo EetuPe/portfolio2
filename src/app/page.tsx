@@ -26,6 +26,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge";
+import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
@@ -201,6 +202,14 @@ export default function Home() {
             </CardFooter>
           </Card>
         </div>
+      </section>
+
+      {/* Timeline Section */}
+      <section className="py-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-secondary-foreground mb-12">
+          Experience
+        </h2>
+        <Timeline />
       </section>
     </main>
   );
