@@ -25,22 +25,22 @@ const Timeline: React.FC = () => {
           {index % 2 === 0 ? (
             <>
               <div className="timeline-content w-1/2 px-8 text-right">
-                <Badge variant="secondary" className="mb-2">{item.date}</Badge>
-                <h3 className="timeline-title text-lg font-semibold">{item.title}</h3>
+                <Badge variant="secondary" className="mb-2 text-primary-foreground">{item.date}</Badge>
+                <h3 className="timeline-title text-lg font-semibold text-secondary-foreground">{item.title}</h3>
                 <p className="timeline-description text-sm text-gray-600">{item.description}</p>
               </div>
               <div className="w-1/2 relative">
-                <div className="absolute left-0 transform -translate-x-1/2 bg-red-500 w-4 h-4 rounded-full border-2 border-white"></div>
+                <div className="absolute left-0 transform -translate-x-1/2 bg-primary w-4 h-4 rounded-full border-2 border-white"></div>
               </div>
             </>
           ) : (
             <>
               <div className="w-1/2 relative">
-                <div className="absolute right-0 transform translate-x-1/2 bg-red-500 w-4 h-4 rounded-full border-2 border-white"></div>
+                <div className="absolute right-0 transform translate-x-1/2 bg-primary w-4 h-4 rounded-full border-2 border-white"></div>
               </div>
               <div className="timeline-content w-1/2 px-8 text-left">
-                <Badge variant="secondary" className="mb-2">{item.date}</Badge>
-                <h3 className="timeline-title text-lg font-semibold">{item.title}</h3>
+                <Badge variant="secondary" className="mb-2 text-primary-foreground">{item.date}</Badge>
+                <h3 className="timeline-title text-lg font-semibold text-secondary-foreground">{item.title}</h3>
                 <p className="timeline-description text-sm text-gray-600">{item.description}</p>
               </div>
             </>

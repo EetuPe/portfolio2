@@ -48,9 +48,31 @@
     --input: 240 3.7% 15.9%;
     --ring: 346.8 77.2% 49.8%;
   }
+
+  .catppuccin-mocha {
+    --background: 240 21% 15%;
+    --foreground: 226 64% 88%;
+    --card: 240 21% 15%;
+    --card-foreground: 226 64% 88%;
+    --popover: 240 21% 15%;
+    --popover-foreground: 226 64% 88%;
+    --primary: 343 81% 75%;
+    --primary-foreground: 240 21% 15%;
+    --secondary: 232 97% 85%;
+    --secondary-foreground: 226 64% 88%;
+    --muted: 228 17% 64%;
+    --muted-foreground: 226 64% 88%;
+    --accent: 343 81% 75%;
+    --accent-foreground: 240 21% 15%;
+    --destructive: 343 81% 75%;
+    --destructive-foreground: 240 21% 15%;
+    --border: 228 17% 64%;
+    --input: 228 17% 64%;
+    --ring: 343 81% 75%;
+    --radius: 0.5rem;
+  }
 }
 
- 
 @layer base {
   * {
     @apply border-border;
