@@ -15,6 +15,7 @@
     --primary-foreground: 355.7 100% 97.3%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
+    --badge-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
     --accent: 240 4.8% 95.9%;
@@ -38,6 +39,7 @@
     --primary-foreground: 355.7 100% 97.3%;
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
+    --badge-foreground: 0 0% 98%;
     --muted: 0 0% 15%;
     --muted-foreground: 240 5% 64.9%;
     --accent: 12 6.5% 15.1%;
@@ -60,6 +62,7 @@
     --primary-foreground: 240 21% 15%;
     --secondary: 232 97% 85%;
     --secondary-foreground: 226 64% 88%;
+    --badge-foreground: 240 21% 15%;
     --muted: 228 17% 64%;
     --muted-foreground: 226 64% 88%;
     --accent: 343 81% 75%;

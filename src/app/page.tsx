@@ -101,9 +101,9 @@ export default function Home() {
                 </a>
               </div>
               <div className="flex flex-wrap gap-2 justify-center">
-                <Badge variant="secondary" className="text-primary-foreground"><DiReact className="inline mr-1"/>React</Badge>
-                <Badge variant="secondary" className="text-primary-foreground"><DiJsBadge className="inline mr-1"/>Javascript</Badge>
-                <Badge variant="secondary" className="text-primary-foreground"><DiHtml5 className="inline mr-1"/>HTML</Badge>
+                <Badge variant="secondary" className="text-badge-foreground"><DiReact className="inline mr-1"/>React</Badge>
+                <Badge variant="secondary" className="text-badge-foreground"><DiJsBadge className="inline mr-1"/>Javascript</Badge>
+                <Badge variant="secondary" className="text-badge-foreground"><DiHtml5 className="inline mr-1"/>HTML</Badge>
               </div>
               <Snippet className="w-full text-sm">gh repo clone EetuPe/produni1.1</Snippet>
             </CardFooter>
@@ -136,9 +136,9 @@ export default function Home() {
                 </a>
               </div>
               <div className="flex flex-wrap gap-2 justify-center">
-                <Badge variant="secondary" className="text-primary-foreground"><DiReact className="inline mr-1"/>React</Badge>
-                <Badge variant="secondary" className="text-primary-foreground"><DiJsBadge className="inline mr-1"/>Javascript</Badge>
-                <Badge variant="secondary" className="text-primary-foreground"><DiHtml5 className="inline mr-1"/>HTML</Badge>
+                <Badge variant="secondary" className="text-badge-foreground"><DiReact className="inline mr-1"/>React</Badge>
+                <Badge variant="secondary" className="text-badge-foreground"><DiJsBadge className="inline mr-1"/>Javascript</Badge>
+                <Badge variant="secondary" className="text-badge-foreground"><DiHtml5 className="inline mr-1"/>HTML</Badge>
               </div>
               <Snippet className="w-full text-sm">gh repo clone EetuPe/mentis</Snippet>
             </CardFooter>
@@ -166,9 +166,9 @@ export default function Home() {
                 <Badge className="bg-primary hover:scale-105 transition-transform">Live View</Badge>
               </a>
               <div className="flex flex-wrap gap-2 justify-center">
-                <Badge variant="secondary" className="text-primary-foreground"><DiReact className="inline mr-1"/>React</Badge>
-                <Badge variant="secondary" className="text-primary-foreground"><DiJsBadge className="inline mr-1"/>Javascript</Badge>
-                <Badge variant="secondary" className="text-primary-foreground"><DiHtml5 className="inline mr-1"/>HTML</Badge>
+                <Badge variant="secondary" className="text-badge-foreground"><DiReact className="inline mr-1"/>React</Badge>
+                <Badge variant="secondary" className="text-badge-foreground"><DiJsBadge className="inline mr-1"/>Javascript</Badge>
+                <Badge variant="secondary" className="text-badge-foreground"><DiHtml5 className="inline mr-1"/>HTML</Badge>
               </div>
             </CardFooter>
           </Card>
@@ -195,8 +195,8 @@ export default function Home() {
                 <Badge className="hover:scale-105 transition-transform">{`</>`}</Badge>
               </a>
               <div className="flex flex-wrap gap-2 justify-center">
-                <Badge variant="secondary" className="text-primary-foreground"><DiPython className="inline mr-1"/>Python</Badge>
-                <Badge variant="secondary" className="text-primary-foreground"><TbBrandPython className="inline mr-1"/>Tkinter</Badge>
+                <Badge variant="secondary" className="text-badge-foreground"><DiPython className="inline mr-1"/>Python</Badge>
+                <Badge variant="secondary" className="text-badge-foreground"><TbBrandPython className="inline mr-1"/>Tkinter</Badge>
               </div>
               <Snippet className="w-full text-sm">gh repo clone EetuPe/Skipp-5</Snippet>
             </CardFooter>
